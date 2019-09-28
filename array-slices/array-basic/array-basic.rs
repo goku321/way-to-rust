@@ -1,4 +1,4 @@
-// use std::mem;
+use std::mem;
 
 fn main() {
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
@@ -10,5 +10,8 @@ fn main() {
     println!("First element of ys is: {}", ys[0]);
 
     // use `len` to return size of the array
-    println!("array size: {}", ys.len())
+    println!("array size: {}", ys.len());
+
+    // arrays are stack allocated
+    println!("array occupies {} bytes", mem::size_of_val(&ys));
 }
