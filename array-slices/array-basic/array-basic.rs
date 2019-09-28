@@ -8,4 +8,7 @@ fn main() {
     let ys: [i32; 500] = [0; 500];
 
     println!("First element of ys is: {}", ys[0]);
+
+    // use `len` to return size of the array
+    println!("array size: {}", ys.len())
 }
