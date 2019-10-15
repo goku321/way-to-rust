@@ -1,9 +1,10 @@
 use std::mem;
 
 fn main() {
-    let xs: [i32; 5] = [1, 2, 3, 4, 5];
-
-    println!("First element of array is: {}", xs[0]);
+    let xs: [i32; 5] = [2, 2, 3, 4, 5];
+    for item in xs.iter() {
+        println!("item: {}", item);
+    }
 
     let ys: [i32; 500] = [0; 500];
 
